@@ -56,7 +56,7 @@ def add():
     
     try:
         orderCollection.add(orders)
-        return jsonify({"success": True}), 200
+        return redirect('/', code=200)
     except Exception as e:
         return f"An Error Occured: {e}"
 @app.route('/', methods=['GET'])

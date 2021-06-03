@@ -10,13 +10,13 @@
  {% block body %}
  <body>
     <hr>
-        <input type="text" id="myInput" onkeyup='tableSearch()' placeholder="Name">
+        <input type="text" id="myInput" onkeyup='tableSearch()' placeholder="Region Search">
     <div class="order">
         <h1>Order Details</h1>
         <table id="myTable" border="1" class="table">
             <tr class="table__header">
-                <th>Region</th>
-                <th>Country</th>
+                <th class="headerSortDown">Region</th>
+                <th class="headerSortUp">Country</th>
                 <th>Item Type</th>
                 <th>Sales Channel</th>
                 <th>Order Priority</th>
@@ -57,19 +57,19 @@
             {% endfor %}
         </table>
         <form action="/" method="POST">
-        Region:<input type="text" name="region" id="region">
-        Country:<input type="text" name="country" id="country">
-        Item Type:<input type="text" name="itemType" id="itemType">
-        Sales Channel:<input type="text" name="salesChannel" id="salesChannel">
-        Order Priority:<input type="text" name="orderPriority" id="orderPriority">
+        <input type="text" name="region" id="region", placeholder="Region">
+        <input type="text" name="country" id="country", placeholder="Country">
+        <input type="text" name="itemType" id="itemType", placeholder="Item Type">
+        <input type="text" name="salesChannel" id="salesChannel", placeholder="Sales Channel">
+        <input type="text" name="orderPriority" id="orderPriority", placeholder="Order Priority">
         Order Date:<input type="date" name="orderDate" id="orderDate">
         Ship Date:<input type="date" name="shipDate" id="shipDate">
-        Units Sold:<input type="number" name="unitsSold" id="unitsSold">
-        Unit Price:<input type="number" name="unitPrice" id="unitPrice">
-        Unit Cost:<input type="number" name="unitCost" id="unitCost">
-        Total Revenue:<input type="number" name="totalRevenue" id="totalRevenue">
-        Total Cost:<input type="number" name="totalCost" id="totalCost">
-        Total Profit:<input type="number" name="totalProfit" id="totalProfit">
+        <input type="number" name="unitsSold" id="unitsSold", placeholder="Units Sold">
+        <input type="number" name="unitPrice" id="unitPrice", placeholder="Unit Price">
+        <input type="number" name="unitCost" id="unitCost", placeholder="Unit Cost">
+        <input type="number" name="totalRevenue" id="totalRevenue", placeholder="Total Revenue">
+        <input type="number" name="totalCost" id="totalCost", placeholder="Total Cost">
+        <input type="number" name="totalProfit" id="totalProfit", placeholder="Total Profit">
         <input type="submit" value="Add Order"> 
         </form>
     </div>
