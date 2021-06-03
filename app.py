@@ -76,11 +76,6 @@ def read():
         return f"An Error Occured: {e}"
 # @app.route('/update', methods=['POST', 'PUT'])
 # def update():
-#     """
-#         update() : Update document in Firestore collection with request body
-#         Ensure you pass a custom ID as part of json body in post request
-#         e.g. json={'id': '1', 'title': 'Write a blog post today'}
-#     """
 #     try:
 #         id = request.json['id']
 #         orders.document(id).update(request.json)
