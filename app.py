@@ -67,7 +67,7 @@ def read():
         all_todos : Return all documents
     """
     try:
-        docs = db.collection(u'ORDERSNEW').stream()
+        docs = db.collection(u'ORDERSNEW').stream() // get all documents in a collection
         orders = []
         for doc in docs:
             orders.append(doc.to_dict())
